@@ -1,16 +1,66 @@
-<!DOCTYPE html>
+<!-- Make a job app form having fields Name*, Email*, Gender* (radio), Laptop Brands(options : [Apple, Asus, HP]), Age*, DOB*, Password* & submit button.
 
+Also, Take input from the users where they can paste the website URL of their portfolio. The input element must have portfolio as id
+
+Instructions: * are required fields, Use method attribute value that you should use in this case for the form!
+
+The respective input elements for the mentioned fields should have ids #name, #email, #password, #age, #dob
+
+The element for selecting laptop brand should have id #laptop
+
+The radio buttons for gender should have name atrribute as gender.
+
+All input elements must also have corresponding labels with for attribute set to id's of element they belong to. Example label for input of name will be Name -->
+
+<!DOCTYPE html>
 <html>
 
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
+	<body>
+		<!-- the entire body must be written by student -->
+		<form action="mail to:saduvinuthna24@gmail.com" method="post">
+			<label for="name">Name</label>
+			<input type="text" required id="name" placeholder="Type  name" name="name">
+			<br><br>
+	
+			<label for="email">Email:</label>
+			<input type="text" required id="email" placeholder="Type mail" name="email">
+			<br><br>
+	
+			<label for="gender">Gender:</label>
+			<input type="radio" name="gender" id="gender" value="M" re > Male
+			<input type="radio" name="gender" id="gender" value="F" > Female
+			<input type="radio" name="gender" id="gender" value="O" > Others
+			<br><br>
+		  
+			<label for="laptop">Car Brands </label>
+			<select  name="laptopbrand" id="laptop">
+				<option value="Dell">Dell</option>
+				<option value="HP">HP</option>
+				<option value="Asus">Asus</option>
+			</select>
+			<br><br>
+			<label for="age">Age:</label>
+			<input type="number" name="age" id="age" required>
+			<br><br>
+	
+			<label for="dob">DOB:</label>
+			<input type="date" name="dob" id="dob" required>
+			<br><br>
+	
+			<label for="password">Password:</label>
+			<input type="password" name="pwd" id="password" required>
+			<br><br>
+	
+			<button type="submit">Submit</button>
+	
+		</form>
+		<script type="text/javascript" src="./script.js">
+	</script>
+	
+	</body>
 
 </html>
